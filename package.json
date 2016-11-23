@@ -1,0 +1,11 @@
+{
+    "name": "AlkoAPI",
+    "description": "JSON API for alko",
+    "author": "Hugo Holmqvist",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {
+        "express":"4.14.0",
+        "needle": "1.4.1"
+    }
+}
