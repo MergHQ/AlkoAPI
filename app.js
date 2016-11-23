@@ -4,7 +4,7 @@ const app = express();
 const products = {};
 const FS = require('fs');
 
-const activeTime = FS.readFileSync('dump').split(',');
+const activeTime = FS.readFileSync('dump', 'utf8').split(',');
 
 const url = (date, month) => {
   return `https://www.alko.fi/INTERSHOP/static/WFS/Alko-OnlineShop-Site/-/Alko-OnlineShop/fi_FI/Muut%20ladattavat%20tiedostot/Hinnastot/alkon-hinnasto-tekstitiedostona-${date}-${month}.txt`;
@@ -16,6 +16,7 @@ var restTemplate = {
   data: null
 };
 
+poll();
 setInterval(poll, 3 * 60 * 1000);
 
 function poll() {
