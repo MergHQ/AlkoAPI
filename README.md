@@ -1,5 +1,5 @@
 # AlkoAPI
-JSON API for alko
+Alko decided to remove their public API for product information, so I quickly made a little application that converts the .txt file with product information and prices they provide to JSON.
 
 # Entrypoint
 http://droptable.tk:8080/
