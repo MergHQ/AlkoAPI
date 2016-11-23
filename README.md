@@ -1,6 +1,9 @@
 # AlkoAPI
 JSON API for alko
 
+# Entrypoint
+http://droptable.tk:8080/
+
 ________________
 
 # Endpoints
@@ -34,4 +37,5 @@ ________________
     "price": "15,58"
   }
 }
+
 ```
