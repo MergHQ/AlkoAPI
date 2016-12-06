@@ -1,4 +1,4 @@
-const needle = require('needle');
+const request = require('request');
 const express = require('express');
 const app = express();
 const products = {};
@@ -20,8 +20,7 @@ poll();
 setInterval(poll, 3 * 60 * 1000);
 
 function poll() {
-  needle.get(url(activeTime[0], activeTime[1]), (err, res) => {
-
+  request.get(url(activeTime[0], activeTime[1]), (err, res) => {
     // Update the URL for the .txt file
     if (res.statusCode === 404) {
       var date = new Date();
